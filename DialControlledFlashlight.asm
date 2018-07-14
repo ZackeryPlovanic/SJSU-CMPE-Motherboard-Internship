@@ -19,7 +19,7 @@ readEncoder:
 	bgt $t0, 8, readEncoder		#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
 	
-updateLed:
+		#update the LED values
 	sub $t3, $t0, $t1		#calculate the change in decoder value
 	add $t2, $t2, $t3		#update led register
 	sw $t2, 18432($t0)		#update physical LEDs
