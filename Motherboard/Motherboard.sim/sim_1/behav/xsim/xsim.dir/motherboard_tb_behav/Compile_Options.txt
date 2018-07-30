@@ -1,0 +1,1 @@
+-wto "ff64349f2ccb4e61840ce6ed5cd3c677" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "motherboard_tb_behav" "xil_defaultlib.motherboard_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

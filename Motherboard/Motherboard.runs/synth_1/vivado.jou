@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jul 29 18:36:43 2018
+# Process ID: 5916
+# Current directory: C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard/Motherboard.runs/synth_1
+# Command line: vivado.exe -log Motherboard.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Motherboard.tcl
+# Log file: C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard/Motherboard.runs/synth_1/Motherboard.vds
+# Journal file: C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard/Motherboard.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Motherboard.tcl -notrace
