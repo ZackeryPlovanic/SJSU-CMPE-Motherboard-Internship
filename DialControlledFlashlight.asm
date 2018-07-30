@@ -1,27 +1,36 @@
 # 16384 - Quadrature Decoder Address
 # 18432 - LED Register Address
-# 2730 	- Arbitrary RAM Address\
-# $t0   - contains current decoder value
-# $t1   - contains previous decoder value
-# $t2   - contains current LED register value
-# $t3   - contains the change in decoder values
+# $a0   - contains current decoder value
+# $a1   - contains previous decoder value
+# $a2   - contains current LED register value
+# $a3   - contains the change in decoder values
 main:
-	li $t0, 0			#Initialize $t0 to zero
-	li $t1, 0			#Initialize $t1 to zero
-	li $t2, 0			#Initialize $t2 to zero	
+	li $a0, 0			#Initialize $a0 to zero
+	li $a1, 0			#Initialize $a1 to zero
+	li $a2, 0			#Initialize $a2 to zero	
 					#fall through to readEncoder	
-						#may need to initialize Decoder module by writing to it first???				
 
 readEncoder:
-	lw  $t0, 16384($t0)		#read decoder value
-	beq $t0, $t1, readEncoder	#continue reading if no change
+	lw  $a0, 16384($0)		#read decoder value
+	beq $a0, $a1, readEncoder	#continue reading if no change
+	bgt $a0, 255, readEncoder	#check for overflow
+	blt $a0, 0, readEncoder		#check for underflow
 	
+<<<<<<< HEAD
+		#update the LED values
+	sub $a3, $a0, $a1		#calculate the change in decoder value
+	add $a2, $a2, $a3		#update led register
+	sw $a2, 18432($0)		#update physical LEDs
+	move $a1, $a0 			#update previous decoder value
+	j readEncoder			#Resume checking Decoder
+=======
 	bgt $t0, 8, readEncoder		#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
 	
-updateLed:
+		#update the LED values
 	sub $t3, $t0, $t1		#calculate the change in decoder value
 	add $t2, $t2, $t3		#update led register
 	sw $t2, 18432($t0)		#update physical LEDs
 	move $t1, $t0			#update previous decoder value
 	j readEncoder			#Resume checking Decoder
+>>>>>>> e6281b87336a3ab078e64b6de06e83404ca52779
