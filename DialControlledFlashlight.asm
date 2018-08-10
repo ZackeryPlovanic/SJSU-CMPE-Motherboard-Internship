@@ -16,14 +16,13 @@ readEncoder:
 	bgt $a0, 255, readEncoder	#check for overflow
 	blt $a0, 0, readEncoder		#check for underflow
 	
-<<<<<<< HEAD
 		#update the LED values
 	sub $a3, $a0, $a1		#calculate the change in decoder value
 	add $a2, $a2, $a3		#update led register
 	sw $a2, 18432($0)		#update physical LEDs
 	move $a1, $a0 			#update previous decoder value
 	j readEncoder			#Resume checking Decoder
-=======
+
 	bgt $t0, 8, readEncoder		#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
 	
@@ -33,4 +32,4 @@ readEncoder:
 	sw $t2, 18432($t0)		#update physical LEDs
 	move $t1, $t0			#update previous decoder value
 	j readEncoder			#Resume checking Decoder
->>>>>>> e6281b87336a3ab078e64b6de06e83404ca52779
+
