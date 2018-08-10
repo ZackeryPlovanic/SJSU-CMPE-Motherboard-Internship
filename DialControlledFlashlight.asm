@@ -1,20 +1,20 @@
 # 16384 - Quadrature Decoder Address
 # 18432 - LED Register Address
-# $a0   - contains current decoder value
-# $a1   - contains previous decoder value
-# $a2   - contains current LED register value
-# $a3   - contains the change in decoder values
+# $t0   - contains current decoder value
+# $t1   - contains previous decoder value
+# $t2   - contains current LED register value
+# $t3   - contains the change in decoder values
 main:
-	li $a0, 0			#Initialize $a0 to zero
-	li $a1, 0			#Initialize $a1 to zero
-	li $a2, 0			#Initialize $a2 to zero	
+	li $t0, 0			#Initialize $t0 to zero
+	li $t1, 0			#Initialize $t1 to zero
+	li $t2, 0			#Initialize $t2 to zero	
 					#fall through to readEncoder	
 
 readEncoder:
-	lw  $a0, 16384($0)		#read decoder value
-	beq $a0, $a1, readEncoder	#continue reading if no change
-	bgt $a0, 255, readEncoder	#check for overflow
-	blt $a0, 0, readEncoder		#check for underflow
+	lw  $t0, 16384($0)		#read decoder value
+	beq $t0, $t1, readEncoder	#continue reading if no change
+	bgt $t0, 255, readEncoder	#check for overflow
+	blt $t0, 0, readEncoder		#check for underflow
 
 	bgt $t0, 8, readEncoder		#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
@@ -25,4 +25,3 @@ readEncoder:
 	sw $t2, 18432($t0)		#update physical LEDs
 	move $t1, $t0			#update previous decoder value
 	j readEncoder			#Resume checking Decoder
-
