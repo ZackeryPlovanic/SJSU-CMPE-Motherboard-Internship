@@ -15,9 +15,6 @@ readEncoder:
 	beq $t0, $t1, readEncoder	#continue reading if no change
 	bgt $t0, 255, readEncoder	#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
-
-	bgt $t0, 255, readEncoder		#check for overflow
-	blt $t0, 0, readEncoder		#check for underflow
 	
 		#update the LED values
 	sub $t3, $t0, $t1		#calculate the change in decoder value
