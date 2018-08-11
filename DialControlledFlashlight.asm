@@ -16,7 +16,7 @@ readEncoder:
 	bgt $t0, 255, readEncoder	#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
 
-	bgt $t0, 8, readEncoder		#check for overflow
+	bgt $t0, 255, readEncoder		#check for overflow
 	blt $t0, 0, readEncoder		#check for underflow
 	
 		#update the LED values
