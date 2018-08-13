@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="motherboard_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="motherboard_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="984201000001fs"></ZoomEndTime>
+      <Cursor1Time time="61451000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="183"></NameColumnWidth>
+      <ValueColumnWidth column_width="241"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/motherboard_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/encoder_phase_a" type="logic">
+      <obj_property name="ElementShortName">encoder_phase_a</obj_property>
+      <obj_property name="ObjectShortName">encoder_phase_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/encoder_phase_b" type="logic">
+      <obj_property name="ElementShortName">encoder_phase_b</obj_property>
+      <obj_property name="ObjectShortName">encoder_phase_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/mips/ProgramCounter" type="array">
+      <obj_property name="ElementShortName">ProgramCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ProgramCounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/mips/AddressBus" type="array">
+      <obj_property name="ElementShortName">AddressBus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AddressBus[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/mips/DataBus" type="array">
+      <obj_property name="ElementShortName">DataBus[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataBus[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/load" type="logic">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/data" type="array">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/signal" type="logic">
+      <obj_property name="ElementShortName">signal</obj_property>
+      <obj_property name="ObjectShortName">signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/duty_counter" type="array">
+      <obj_property name="ElementShortName">duty_counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">duty_counter[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/duty_compare_value" type="array">
+      <obj_property name="ElementShortName">duty_compare_value[7:0]</obj_property>
+      <obj_property name="ObjectShortName">duty_compare_value[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/duty" type="array">
+      <obj_property name="ElementShortName">duty[7:0]</obj_property>
+      <obj_property name="ObjectShortName">duty[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/period" type="array">
+      <obj_property name="ElementShortName">period[7:0]</obj_property>
+      <obj_property name="ObjectShortName">period[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/motherboard_tb/DUT/PWM_Driver0/pwm_clk" type="logic">
+      <obj_property name="ElementShortName">pwm_clk</obj_property>
+      <obj_property name="ObjectShortName">pwm_clk</obj_property>
+   </wvobject>
+</wave_config>

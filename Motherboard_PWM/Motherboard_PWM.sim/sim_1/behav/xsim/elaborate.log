@@ -1,0 +1,13 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 4c5d6d0c5aa2486cbd0327946652314e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot motherboard_tb_behav xil_defaultlib.motherboard_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 9 differs from formal bit length 8 for port a [C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard V2/Motherboard.srcs/sources_1/imports/Motherboard Internship/MotherboardSampleProject/MotherboardSampleProject/MotherboardSampleProject.srcs/sources_1/new/Motherboard.v:109]
+WARNING: [VRFC 10-278] actual bit length 42 differs from formal bit length 15 for port in [C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard V2/Motherboard.srcs/sources_1/imports/Motherboard Internship/MotherboardSampleProject/MotherboardSampleProject/MotherboardSampleProject.srcs/sources_1/new/MIPS.v:288]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port sign_extend [C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard V2/Motherboard.srcs/sources_1/imports/Motherboard Internship/MotherboardSampleProject/MotherboardSampleProject/MotherboardSampleProject.srcs/sources_1/new/MIPS.v:327]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 16 for port a [C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard V2/Motherboard.srcs/sources_1/imports/Motherboard Internship/MotherboardSampleProject/MotherboardSampleProject/MotherboardSampleProject.srcs/sources_1/new/MIPS.v:328]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port D [C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard V2/Motherboard.srcs/sources_1/imports/Motherboard Internship/MotherboardSampleProject/MotherboardSampleProject/MotherboardSampleProject.srcs/sources_1/new/Motherboard.v:249]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/ME/Documents/SJSU/CMPE Internship 2018/Motherboard V2/Motherboard.srcs/sources_1/imports/Motherboard Internship/MotherboardSampleProject/MotherboardSampleProject/MotherboardSampleProject.srcs/sources_1/new/MIPS.v:288]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

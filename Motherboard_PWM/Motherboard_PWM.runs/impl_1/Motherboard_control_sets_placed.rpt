@@ -1,0 +1,282 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Aug 12 18:33:44 2018
+| Host         : ME-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file Motherboard_control_sets_placed.rpt
+| Design       : Motherboard
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   216 |
+| Unused register locations in slices containing registers |  1214 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |          200 |
+|     14 |            1 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |             914 |          220 |
+| No           | Yes                   | No                     |             128 |           64 |
+| Yes          | No                    | No                     |              16 |            3 |
+| Yes          | No                    | Yes                    |             224 |           39 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+-------------------------------------------+------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |               Enable Signal               |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------------------------------+-------------------------------------------+------------------------------------------------+------------------+----------------+
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_0 |                1 |              2 |
+|  PWM_Driver0/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_0             | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P   |                                           | mips/pc_register/duty_compare_value_reg[0]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[0]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[0]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P   |                                           | mips/pc_register/duty_compare_value_reg[1]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[1]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[1]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P   |                                           | mips/pc_register/duty_compare_value_reg[2]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[2]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[2]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P   |                                           | mips/pc_register/duty_compare_value_reg[3]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[3]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[3]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P   |                                           | mips/pc_register/duty_compare_value_reg[4]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[4]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[4]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P   |                                           | mips/pc_register/duty_compare_value_reg[5]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[5]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[5]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P   |                                           | mips/pc_register/duty_compare_value_reg[6]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[6]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[6]_C_6 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P   |                                           | mips/pc_register/duty_compare_value_reg[7]_C   |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_0 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_0 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_1 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_1 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_2 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_2 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_3 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_3 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_4 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_4 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_5 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_5 |                1 |              2 |
+|  mips/pc_register/duty_compare_value_reg[7]_P_6 |                                           | mips/pc_register/duty_compare_value_reg[7]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_6 |                1 |              2 |
+|  PWM_Driver1/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_6             | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_3             | PWM_Driver7/CLOCK1/AR[0]                       |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P   |                1 |              2 |
+|  PWM_Driver2/CLOCK1/slow_clk                    | mips/pc_register/signal_reg               | PWM_Driver7/CLOCK1/AR[0]                       |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_4 |                1 |              2 |
+|  PWM_Driver3/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_4             | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_2 |                1 |              2 |
+|  PWM_Driver4/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_2             | PWM_Driver7/CLOCK1/AR[0]                       |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_5 |                1 |              2 |
+|  PWM_Driver5/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_5             | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_P_1 |                1 |              2 |
+|  PWM_Driver6/CLOCK1/slow_clk                    | mips/pc_register/signal_reg_1             | PWM_Driver7/CLOCK1/AR[0]                       |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[0]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[1]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[2]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[3]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[4]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[5]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_C_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[6]_P_3 |                1 |              2 |
+|  PWM_Driver7/CLOCK1/slow_clk                    |                                           | mips/pc_register/duty_compare_value_reg[7]_C_3 |                1 |              2 |
+|  cpu_clk_BUFG                                   | mips/pc_register/Q_reg[7]_3[0]            | clock/AR[0]                                    |                2 |             14 |
+|  PWM_Driver0/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7][0]   | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                2 |             16 |
+|  PWM_Driver1/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7]_5[0] | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                2 |             16 |
+|  PWM_Driver5/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7]_4[0] | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                3 |             16 |
+|  PWM_Driver4/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7]_1[0] | PWM_Driver7/CLOCK1/AR[0]                       |                3 |             16 |
+|  PWM_Driver6/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7]_0[0] | PWM_Driver7/CLOCK1/AR[0]                       |                2 |             16 |
+|  PWM_Driver3/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7]_3[0] | PWM_Driver5/CLOCK1/counter_reg[23]_0           |                3 |             16 |
+|  PWM_Driver2/CLOCK1/slow_clk                    | mips/pc_register/E[0]                     | PWM_Driver7/CLOCK1/AR[0]                       |                2 |             16 |
+|  PWM_Driver7/CLOCK1/slow_clk                    | mips/pc_register/duty_counter_reg[7]_2[0] | PWM_Driver7/CLOCK1/AR[0]                       |                3 |             16 |
+|  cpu_clk_BUFG                                   | PWM_Driver7/CLOCK1/p_0_in                 |                                                |                3 |             16 |
+|  cpu_clk_BUFG                                   |                                           | QuadDecoder/U1/AR[0]                           |               14 |             64 |
+|  clk100Mhz_IBUF_BUFG                            |                                           | clock/AR[0]                                    |                8 |             66 |
+|  cpu_clk_BUFG                                   | QuadDecoder/U0/E[0]                       | QuadDecoder/U1/AR[0]                           |                9 |             66 |
+|  cpu_clk_BUFG                                   | mips/pc_register/RegWrite                 |                                                |               12 |            192 |
+|  cpu_clk_BUFG                                   |                                           | PWM_Driver5/CLOCK1/counter_reg[23]_0           |               34 |            264 |
+|  cpu_clk_BUFG                                   |                                           | PWM_Driver7/CLOCK1/AR[0]                       |               36 |            264 |
++-------------------------------------------------+-------------------------------------------+------------------------------------------------+------------------+----------------+
+
+
